@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.navegador {
+  background-color: #f5deb3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.navegador ul {
+  display: flex;
+  list-style: none;
+  margin: 25px;
+}
+
+.navegador li {
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.navegador a {
+  color: black;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.navegador a:hover {
+  color: #f3c06096;
+}
+
+/*index*/
+.section-estudio {
+  text-align: center;
+  background-image: url(../img/poder-judicial2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 8px rgb(0, 0, 0);
+  color: white;
+  padding: 100px 0;
+}
+.titulo-estudio {
+  font-size: 2rem;
+  text-shadow: 3px 3px 4px #f5deb3;
+
+}
+.texto-estudio {
+  font-size: 2rem;
+  text-shadow: 3px 3px 4px #f5deb3;
+}
+
+.card{
+  width: 20rem;
+    border: 2px solid #f5deb3; 
+    border-radius: 15px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 25px;
+}
+  
+
+/*QUIENES SOMOS*/
+.h1-quienes-somos {
+  text-align: center;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 20% 40% 30%;
+  grid-template-rows: 10% 40% 40%;
+  grid-template-areas:
+    "titulo1 titulo2 titulo3"
+    "texto1 img1 texto2"
+    "img2 texto3 img3";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.grid-h2-historia {
+  grid-area: titulo1;
+}
+.grid-h2-nuestros-objetivos {
+  grid-area: titulo2;
+}
+.grid-h2-valores {
+  grid-area: titulo3;
+}
+.grid-texto-historia {
+  grid-area: texto1;
+  padding-top: 25px;
+}
+.grid-img-1 {
+  grid-area: img3;
+  width: 500px;
+}
+.grid-img-2 {
+  width: 500px;
+}
+.grid-texto-nuestros-objetivos {
+  grid-area: texto2;
+}
+.grid-img-historia {
+  grid-area: img2;
+}
+.grid-texto-valores {
+  grid-area: texto3;
+}
+.grid-img-valores {
+  grid-area: img1;
+}
+
+/*SERVICIOS*/
+.titulo-servicios {
+  text-align: center;
+  font-size: 2rem;
+}
+.parrafo-servicios {
+  text-align: center;
+}
+.contenedor-servicios {
+  display: flex;
+  padding: 400 px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.caja {
+  font-size: 1rem;
+  width: 300px;
+  height: 30vh;
+  border: 1px solid #f5deb3;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #f3c06096;
+}
+.p-caja1{
+  font-size: 1.2rem;
+}
+.p-caja2{
+  font-size: 1.2rem;
+}
+.p-caja3{
+  font-size: 1.2rem;
+}
+.p-caja4{
+  font-size: 1.2rem;
+}
+
+/*CONTACTOS título*/
+.h1-contactos{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #f3c06096;
+    text-decoration: underline;
+    text-shadow: 1px 1px 8px #f5deb3;
+}
+/*CONTACTOS formulario*/
+form{
+    width: 500px;
+    margin:40px auto;
+    padding:20px;
+    background: #f8f9fa;
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.h2-contactos{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #f3c06096;
+    text-decoration: underline;
+    text-shadow: 1px 1px 8px #f5deb3;
+}
+
+.mapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5deb3;
+  flex-direction: row;  
+  padding: 10px 0px;
+}
+
+footer img{
+  width: 40px;
+}
+
+
+/*mobile*/
+@media (max-width:500px){
+  /*.navegador{
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+  }*/
+  .navegador {
+    flex-direction: column;
+    padding: 5px; 
+  }
+
+  .navegador ul {
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  .navegador li {
+    margin: 5px 0; 
+    text-align: center;
+  }
+
+  .navegador a {
+    padding: 5px 5px;
+  }
+  .logo{
+    width: 45px;
+  }
+
+  /*Index
+  .section-estudio{
+    background-size: contain;  Ajusta la imagen para que se vea completa 
+    padding: 50px 0;  Reduce el padding para evitar que ocupe demasiado espacio 
+    font-size: 14px;  Reduce el tamaño del texto para evitar desbordes 
+  }*/
+
+  /*QUIENES SOMOS*/
+  .contenedor-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "titulo1"
+    "texto1"
+    "img2"
+    "titulo2"
+    "img1"
+    "texto3"
+    "titulo3"
+    "texto2"
+    "img3";
+  }
+
+  .grid-texto-historia{
+    font-size: 1rem;
+    padding-top: 0%;
+  }
+  .grid-texto-nuestros-objetivos{
+    font-size: 1rem;
+  }
+  .grid-texto-valores{
+      font-size: 1rem;
+  }
+  .grid-img-1{
+    width: 90%;
+  }
+  .grid-img-2{
+    width: 90%;
+  }
+  .grid-img-3{
+    width: 90%;
+  }
+
+}
