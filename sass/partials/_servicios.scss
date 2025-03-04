@@ -1,0 +1,56 @@
+@use "./variables";
+
+/*Main Servicios*/
+.main-servicios {
+  .titulo-servicios {
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px;
+  }
+  .parrafo-servicios {
+    text-align: center;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .caja {
+      font-size: 1rem;
+      width: 300px;
+      border: 1px solid variables.$naranjaclaro;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px variables.$naranjaoscuro;
+      .p-caja1,
+      .p-caja2,
+      .p-caja3,
+      .p-caja4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .caja-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 30px;
+    border: 1px solid variables.$naranjaclaro;
+    box-shadow: 3px 3px 8px variables.$naranjaoscuro;
+    font-size: 1.3rem;
+  }
+  .h2-porque {
+    @extend .caja-texto;
+    border: 1px solid variables.$naranjaclaro;
+    box-shadow: none;
+  }
+}

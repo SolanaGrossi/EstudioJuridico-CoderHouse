@@ -1,0 +1,23 @@
+@use "./variables";
+
+.main-preguntas {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: variables.$naranjaclaro;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px variables.$naranjaoscuro;
+  .h1-preguntas {
+    text-align: center;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    opacity: 0;
+    animation: mianimacion 2s ease-in-out 3 forwards;
+  }
+  h2 {
+    @include variables.sizepad(1.8rem, 10px);
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}

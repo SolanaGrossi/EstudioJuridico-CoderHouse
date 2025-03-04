@@ -1,0 +1,7 @@
+@mixin sizepad($fs, $pad) {
+  font-size: $fs;
+  padding: $pad;
+}
+
+$naranjaclaro: #f5deb3;
+$naranjaoscuro: #f3c06096;

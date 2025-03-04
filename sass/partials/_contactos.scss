@@ -1,0 +1,69 @@
+/*Main contactos*/
+@use "./variables";
+
+.main-contactos {
+  .h1-contactos {
+    text-align: center;
+    font-size: 2rem;
+    color: variables.$naranjaoscuro;
+    text-decoration: underline;
+    text-shadow: 1px 1px 8px variables.$naranjaclaro;
+  }
+  .h2-contactos {
+    @include variables.sizepad(2.5rem, 30px);
+  }
+  .p-h2 {
+    @include variables.sizepad(1.5rem, 10px);
+  }
+
+  .section-form {
+    form {
+      width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+      }
+      input,
+      textarea {
+        width: 100%;
+        @include variables.sizepad(16px, 8px);
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+      button {
+        width: 100%;
+        @include variables.sizepad(1rem, 10px);
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+    }
+  }
+  .mapa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    .h2-contactos {
+      text-align: center;
+      font-size: 1.7rem;
+      color: variables.$naranjaoscuro;
+      text-decoration: underline;
+      text-shadow: 1px 1px 8px variables.$naranjaclaro;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use "./variables";
+
+/*MAIN INDEX*/
+.index-main {
+  .section-estudio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/poder-judicial2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+    color: white;
+    padding: 100px 0;
+    .titulo-estudio {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 7px;
+      font-size: 2rem;
+      text-shadow: 3px 3px 4px variables.$naranjaclaro;
+      max-width: 40%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .texto-estudio {
+      @extend .titulo-estudio;
+    }
+  }
+  .IndexSection2 {
+    .p-section2 {
+      font-size: 1.5rem;
+      margin: 25px;
+    }
+  }
+
+  .container {
+    .card {
+      width: 20rem;
+      border: 2px solid variables.$naranjaclaro;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px variables.$naranjaoscuro;
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+  }
+}

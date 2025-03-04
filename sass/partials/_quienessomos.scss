@@ -1,0 +1,53 @@
+/*Main Quienes Somos*/
+.quienessomos-main {
+  .h1-quienes-somos {
+    text-align: center;
+  }
+  .contenedor-grid {
+    p {
+      font-size: 1.1rem;
+    }
+    display: grid;
+    grid-template-columns: 20% 40% 30%;
+    grid-template-rows: 10% 40% 40%;
+    grid-template-areas:
+      "titulo1 titulo2 titulo3"
+      "texto1 img1 texto2"
+      "img2 texto3 img3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    .grid-h2-historia {
+      grid-area: titulo1;
+    }
+    .grid-h2-nuestros-objetivos {
+      grid-area: titulo2;
+    }
+    .grid-h2-valores {
+      grid-area: titulo3;
+    }
+    .grid-texto-historia {
+      grid-area: texto1;
+    }
+    .grid-img-1 {
+      grid-area: img3;
+      width: 570px;
+    }
+    .grid-img-2 {
+      width: 500px;
+    }
+    .grid-texto-nuestros-objetivos {
+      grid-area: texto2;
+    }
+    .grid-img-historia {
+      grid-area: img2;
+    }
+    .grid-texto-valores {
+      grid-area: texto3;
+    }
+    .grid-img-valores {
+      grid-area: img1;
+    }
+  }
+}
