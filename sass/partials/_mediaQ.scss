@@ -1,3 +1,239 @@
+/*TABLET*/
+@media (max-width: 800px) {
+  /*Navegador*/
+  /*.navegador {
+    padding: 2px;
+    margin: 0;
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      gap: 2px;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 2px;
+      font-size: 0.8rem;
+    }
+    a {
+      padding: 4px 6px;
+    }
+    .logo {
+      width: 50px;
+    }
+  }*/
+  .navegador {
+    flex-direction: column;
+    padding: 8px 0px;
+    ul {
+      flex-direction: column;
+
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      gap: 3px;
+    }
+
+    li {
+      margin: 0;
+      padding: 5px 0;
+    }
+
+    a {
+      padding: 5px 5px;
+    }
+    .logo {
+      width: 40px;
+      margin-bottom: 0;
+    }
+  }
+
+  /*INDEX*/
+  .index-main {
+    .section-estudio {
+      padding: 70px 0;
+      background-size: cover;
+      background-position: center;
+
+      .titulo-estudio {
+        font-size: 1.8rem;
+        max-width: 60%;
+        padding: 12px;
+      }
+      .texto-estudio {
+        font-size: 1.4rem;
+        max-width: 80%;
+      }
+    }
+
+    .IndexSection2 {
+      .p-section2 {
+        font-size: 1.2rem;
+        margin: 15px;
+        padding: 0 15px;
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: stretch;
+      }
+      .card {
+        width: calc(
+          50% - 10px
+        ); /*para que entren dos por fila con espacio entre ellas*/
+        margin-bottom: 15px;
+        min-height: auto; /*para que no se estiren tanto*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card-body {
+        flex-grow: 1;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .card-text {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      .card:nth-child(odd):last-child {
+        width: 100%; /*esto hace que la última quede centrada*/
+      }
+    }
+  }
+
+  /*SERVICIOS*/
+  .main-servicios {
+    .titulo-servicios {
+      font-size: 1.8rem;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .contenedor-servicios {
+      padding: 10px;
+      justify-content: space-evenly;
+      gap: 10px;
+
+      .caja {
+        width: 45%;
+        margin: 10px 0;
+        font-size: 1.1rem;
+        padding: 15px;
+      }
+    }
+    .caja-texto {
+      width: 80%;
+      font-size: 1.2rem;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .h2-porque {
+      font-size: 1.5rem;
+      padding: 15px;
+    }
+  }
+
+  /*QUINES SOMOS*/
+  /*.quienessomos-main {
+    .contenedor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 15px;
+      grid-template-areas:
+        "titulo1 titulo1"
+        "texto1 img2"
+        "titulo2 titulo2"
+        "img1 texto3"
+        "titulo3" "titulo3"
+        "texto2 img3";
+      justify-items: center;
+    }
+
+    grid-texto-historia,
+    .grid-texto-nuestros-objetivos,
+    .grid-texto-valores {
+      font-size: 1.1rem;
+      text-align: justify;
+      padding: 10px;
+      max-width: 90%;
+
+      .grid-img-1,
+      .grid-img-2,
+      .grid-img-3 {
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+        padding-bottom: 5%;
+      }
+
+      .grid-h2-historia,
+      .grid-h2-nuestros-objetivos,
+      .grid-h2-valores {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }*/
+  .quienessomos-main {
+    .contenedor-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 15px;
+      grid-template-areas:
+        "titulo1"
+        "texto1"
+        "img2"
+        "titulo2"
+        "img1"
+        "texto3"
+        "titulo3"
+        "texto2"
+        "img3";
+      justify-items: center;
+    }
+    .grid-texto-historia,
+    .grid-texto-nuestros-objetivos,
+    .grid-texto-valores {
+      font-size: 1rem;
+      text-align: justify;
+      padding: 10px;
+      max-width: 90%;
+    }
+
+    .grid-img-1,
+    .grid-img-2,
+    .grid-img-3 {
+      width: 50%;
+      max-width: 200%;
+      height: auto;
+      padding-bottom: 5%;
+    }
+    .grid-h2-historia,
+    .grid-h2-nuestros-objetivos,
+    .grid-h2-valores {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
 /*MOBILE*/
 @media (max-width: 500px) {
   /*Navegador*/
@@ -8,7 +244,7 @@
       flex-direction: column;
       padding: 0;
       margin: 0;
-      width: 100%; /*5px 0;*/
+      width: 100%;
       text-align: center;
     }
 
@@ -103,8 +339,8 @@
     .grid-img-1,
     .grid-img-2,
     .grid-img-3 {
-      width: 90%;
-      max-width: 300%;
+      width: 50%;
+      max-width: 200%;
       height: auto;
       padding-bottom: 5%;
     }
